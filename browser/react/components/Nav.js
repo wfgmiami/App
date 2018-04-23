@@ -17,7 +17,7 @@ class Nav extends React.Component {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <div className="navbar-brand"><Link to="/">Lord Abbett React App</Link></div>
+              <div className="navbar-brand"><Link to="/app">Lord Abbett React App</Link></div>
             </div>
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav">

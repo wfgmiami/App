@@ -4,22 +4,19 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 
-import App from './containers/App';
+import App from './containers/App.js';
 
 const root = document.getElementById('app');
 
 const route = (
-	<Provider store={ store }>	
+	<Provider store={ store }>
 		<BrowserRouter>
-			<Switch>
-				<Route exact path="/" component={ App } />
-				<Route exact path="/api/quote/:symbol" render={ (router) => (
-					<App router={ router }/>
-				)} />
-			</Switch>  
-	    </BrowserRouter>
-     </Provider>
-   						
+			<App />
+	  </BrowserRouter>
+  </Provider>
+
 )
 
 render(route, root);
+
+
